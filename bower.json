@@ -1,0 +1,28 @@
+{
+  "name": "gulp-spa-backbone",
+  "version": "0.0.0",
+  "homepage": "https://github.com/gaaamii/gulp-spa-backbone",
+  "authors": [
+    "gaaamii <i1shi4ga4mi1@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.1",
+    "backbone": "~1.1.2",
+    "underscore": "~1.7.0",
+    "jquery": "~2.1.1",
+  },
+  "overrides": {
+    "bootstrap": {
+      "ignore": "true"
+    }
+  }
+}

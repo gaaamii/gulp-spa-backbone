@@ -1,0 +1,28 @@
+doctype
+html(lang="ja")
+  head
+    meta(charset="utf-8")
+    meta(name="description", content="")
+    link(rel="stylesheet", href="style.min.css")
+    title gulp-spa-backbone
+  body
+    header
+      .navbar.navbar-default
+        .container
+          ul.nav.navbar-nav
+            li
+              .btn.default#menu-nav Menu
+            li
+              .brand Brand
+          ul.nav.navbar-nav.navbar-right
+            li
+              Button
+    aside(id="sidebar")
+      ul#section-list.list-group
+        li.list-group-item
+    #main
+      .container
+        h1 gulp-spa-backbone
+    footer
+    script(src="vendor.js")
+    script(src="bundle.js")

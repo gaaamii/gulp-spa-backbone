@@ -1,12 +1,12 @@
-require '../models/my-model'
+MyModel = require '../models/my-model'
 
-MyView = Backbone.View.extend
+module.exports = Backbone.View.extend
 
   el: "#somewhere"
 
   initialize: ->
 
   events:
-    # "event": "callback"
+    "event": "callback"
 
   render: ->

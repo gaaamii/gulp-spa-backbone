@@ -1,5 +1,5 @@
-require '../collections/my-collection'
-require '../views/my-view'
+MyCollection  = require '../collections/my-collection'
+MyView        = require '../views/my-view'
 
 module.exports = Backbone.View.extend
 

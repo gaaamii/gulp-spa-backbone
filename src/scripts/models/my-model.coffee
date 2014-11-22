@@ -1,4 +1,4 @@
-MyModel = Backbone.Model.extend
+module.exports = Backbone.Model.extend
   defaults:
     myAttr: "my attribute"
 

@@ -5,4 +5,4 @@ MyCollection = Backbone.Collection.extend
   
   initialize: ->
 
-myCollection = new MyCollection()
+module.exports = new MyCollection()

@@ -48,6 +48,7 @@ gulp.task 'vendor', ->
 
 gulp.task 'watch', ->
   gulp.watch('src/styles/*.less', ['css'])
+  gulp.watch('src/scripts/*.coffee', ['js'])
   gulp.watch('src/scripts/**/*.coffee', ['js'])
 
 gulp.task 'default', ['html', 'css', 'js', 'vendor']

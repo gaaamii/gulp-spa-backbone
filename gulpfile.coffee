@@ -3,7 +3,6 @@ jade        = require 'gulp-jade'
 rename      = require 'gulp-rename'
 csso        = require 'gulp-csso'
 less        = require 'gulp-less'
-coffee      = require 'gulp-coffee'
 browserify  = require 'browserify'
 source      = require 'vinyl-source-stream'
 uglify      = require 'gulp-uglify'
@@ -31,19 +30,15 @@ gulp.task 'css-bootstrap', ->
   gulp.src 'bower_components/bootstrap/dist/css/bootstrap.min.css'
     .pipe gulp.dest 'dist/bower_components'
 
-gulp.task 'coffee', ->
-  gulp.src 'src/scripts/**/*.coffee'
-    .pipe coffee()
-    .pipe gulp.dest 'dist/'
-
-gulp.task 'browserify', ->
-  browserify './dist/app'
-    .bundle()
-    .pipe source 'bundle.js'
-    .pipe streamify(uglify())
-    .pipe gulp.dest('dist/')
-
-gulp.task 'js', ['coffee', 'browserify']
+gulp.task 'js', ->
+  browserify
+    entries: ['./src/scripts/app.coffee']
+    extensions: ['.coffee']
+  .transform 'coffeeify'
+  .bundle()
+  .pipe source 'bundle.js'
+  .pipe streamify(uglify())
+  .pipe gulp.dest('dist/')
 
 gulp.task 'vendor', ->
   gulp.src bowerFiles()

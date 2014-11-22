@@ -1,6 +1,6 @@
 MyModel = Backbone.Model.extend
   defaults:
-    # default attributes
+    myAttr: "my attribute"
 
   validate: (attrs) ->
     if !attrs.myAttr

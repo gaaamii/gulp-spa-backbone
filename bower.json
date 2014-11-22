@@ -10,7 +10,6 @@
     "**/.*",
     "node_modules",
     "bower_components",
-    "app/bower_components",
     "test",
     "tests"
   ],
@@ -18,7 +17,7 @@
     "bootstrap": "~3.3.1",
     "backbone": "~1.1.2",
     "underscore": "~1.7.0",
-    "jquery": "~2.1.1",
+    "jquery": "~2.1.1"
   },
   "overrides": {
     "bootstrap": {

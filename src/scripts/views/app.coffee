@@ -12,4 +12,4 @@ module.exports = Backbone.View.extend
     # @sidebar  = $('#my-element')
 
   events:
-    # "click .somewhere": "myCallback"
+    "event": "myCallback"

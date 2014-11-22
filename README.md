@@ -9,5 +9,6 @@ Build single page applications with gulp and backbone.js
 npm install
 bower install
 gulp
+gulp css-bootstrap
 open dist/index.html
 ```

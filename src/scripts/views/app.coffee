@@ -1,5 +1,5 @@
-require '../models/my-model'
-require '../views/app'
+require '../collections/my-collection'
+require '../views/my-view'
 
 module.exports = Backbone.View.extend
 

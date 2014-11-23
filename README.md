@@ -1,7 +1,7 @@
 gulp-spa-backbone
 =================
 
-Build single page applications with gulp and backbone.js
+Build single-page applications with gulp and backbone.js
 
 ## Usage
 

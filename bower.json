@@ -23,5 +23,8 @@
     "bootstrap": {
       "ignore": "true"
     }
+  },
+  "devDependencies": {
+    "fontawesome": "~4.2.0"
   }
 }

@@ -30,6 +30,12 @@ gulp.task 'css-bootstrap', ->
   gulp.src 'bower_components/bootstrap/dist/css/bootstrap.min.css'
     .pipe gulp.dest 'dist/bower_components'
 
+gulp.task 'icons', ->
+  gulp.src 'bower_components/fontawesome/fonts/**.*'
+    .pipe gulp.dest './dist/fonts'
+  gulp.src 'bower_components/fontawesome/css/font-awesome.min.css'
+    .pipe gulp.dest './dist/bower_components'
+
 gulp.task 'js', ->
   browserify
     entries: ['./src/scripts/app.coffee']
